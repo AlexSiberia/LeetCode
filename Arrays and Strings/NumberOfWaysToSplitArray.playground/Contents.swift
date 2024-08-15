@@ -6,10 +6,10 @@ func waysToSplitArray(_ nums: [Int]) -> Int {
         prefix.append(prefix[prefix.count - 1] + nums[i])
     }
     
-    print(prefix)
+//    print(prefix)
     
     for i in 0..<nums.count - 1 {
-        print((prefix[nums.count - 1] - prefix[i]))
+//        print((prefix[nums.count - 1] - prefix[i]))
         if prefix[i] >= (prefix[nums.count - 1] - prefix[i]) {
             ans += 1
         }
@@ -19,3 +19,4 @@ func waysToSplitArray(_ nums: [Int]) -> Int {
 }
 
 print(waysToSplitArray([10,4,-8,7]))
+print(waysToSplitArray([2,3,5,-5,-1]))
