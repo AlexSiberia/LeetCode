@@ -11,9 +11,10 @@ func reverseOnlyLetters(_ s: String) -> String {
             right -= 1
             continue
         }
-        let buffer: Character = array[left]
-        array[left] = array[right]
-        array[right] = buffer
+//        let buffer: Character = array[left]
+//        array[left] = array[right]
+//        array[right] = buffer
+        array.swapAt(left, right) // another way to swap to elements of array
         left += 1
         right -= 1
     }
