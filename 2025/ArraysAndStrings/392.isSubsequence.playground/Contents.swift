@@ -18,3 +18,4 @@ func isSubsequence(_ subSequence: String, _ sequence: String) -> Bool {
 }
 
 isSubsequence("ace", "acde")
+isSubsequence("acx", "acde")
